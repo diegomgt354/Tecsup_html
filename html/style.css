@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(115, 173, 218);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 25% 0 25%;
+}
+
+button{
+    background-color: pink;
+    border-radius: 10px;
+    border-color: red;
+    padding: 10px;
+    color: red;
+}
+
+h1{
+    color: blueviolet;
+}
+
+.navegacion li{
+    list-style: none;
+}
+
+.navegacion li:hover{
+    font-size: 20px;
+}
+
+.navegacion ul{
+    display: flex;
+    gap: 20px;
+}
+
+.doble img{
+    height: 200px;
+    padding-top: 40px;
+}
+
+.doble img:hover{
+    height: 215px;
+
+}
+
+.doble{
+    display: flex;
+}
+
