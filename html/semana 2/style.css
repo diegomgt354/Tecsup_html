@@ -1,7 +1,62 @@
+/*
+ % considera al contenedor como padre
+ vw (Viewport Width) depende de la pantalla del navegador (depende si esta maximisado o no)
+ vh (Viewport Height) depende de la pantalla del navegador (depende si esta maximisado o no)
+ dvw (Divice Viewport Width) depende de la pantalla del dispositivo 
+ dvh (Divice Viewport Height) depende de la pantalla del dispositivo 
+*/
+
+
 body{
     background-color: rgb(115, 173, 218);
     font-family: 'Courier New', Courier, monospace;
-    padding: 5% 25% 0 25%;
+    /* padding: 5% 25% 0 25%; */
+}
+
+.red{
+    background-color: red;
+    width:50vw;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.btn{
+    margin-top: 50px;
+    /*horizontal vertical difuminado grosor color_de_sombra*/
+    box-shadow: 20px -20px 20px 30px  rgb(139, 73, 73);
+}
+
+.green{
+    background-color: green;
+    width: 50%;
+    height: 300px;
+}
+
+.brown{
+    background-color: brown;
+    width: 70%;
+    height: 300px;
+}
+
+.cardcolor{
+    width: 20%;
+    height: 300px;
+}
+
+.primero{
+    background: linear-gradient(red, blue);
+}
+
+.segundo{
+    background: linear-gradient(to left, red 50%, blue 50%);
+}
+
+.tercero{
+    background: linear-gradient(to right, red -100%, blue 100%);
+}
+
+.cuarto{
+    background: linear-gradient(45deg, red 1%, blue 99%);
 }
 
 .rutitas{
@@ -33,10 +88,12 @@ button{
 .card h3{
     text-align: center;
     color: goldenrod;
+    text-decoration: underline;
 }
 
 .card p{
     color: white;
+    font-weight: bold;
 }
 
 .imgcard{
@@ -72,6 +129,11 @@ a:hover{
 
 a:visited{
     /* color: red; */
+}
+
+#name:focus{
+    background-color: cornflowerblue;
+    box-shadow: 0px 0px 20px white;
 }
 
 .botoncito{
@@ -134,7 +196,6 @@ form{
     border-color: blueviolet;
     padding: 50px;
     margin: 5px;
-
 }
 
 input{
@@ -156,4 +217,16 @@ th{
 }
 td{
     border: 2px solid olive;
+}
+
+@media(width<700px){
+    body{
+        background-color: rgb(300, 173, 218);
+    }
+
+    .rutitas{
+        display: block;
+        gap: 10px;
+    }
+
 }
