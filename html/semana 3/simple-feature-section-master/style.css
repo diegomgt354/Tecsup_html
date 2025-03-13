@@ -21,7 +21,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    /* para o perder el titulo */
+    /* para no perder el titulo */
     min-height: 100vh; 
     justify-content: center;
     padding: 0 0;

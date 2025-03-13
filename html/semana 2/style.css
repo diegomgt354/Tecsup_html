@@ -127,9 +127,9 @@ a:hover{
     color: brown;
 }
 
-a:visited{
-    /* color: red; */
-}
+/* a:visited{
+    color: red;
+} */
 
 #name:focus{
     background-color: cornflowerblue;

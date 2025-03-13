@@ -1,0 +1,22 @@
+body::-webkit-scrollbar {
+    width: 200px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: blueviolet;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background-color: cadetblue;
+}
