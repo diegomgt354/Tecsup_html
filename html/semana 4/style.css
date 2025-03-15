@@ -1,10 +1,9 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     background-color: aqua;
     height: 100px;
     width: 500px;
@@ -14,22 +13,22 @@ nav{
 
 }
 
-nav p{
+nav p {
     animation: subirBajar 2s infinite;
 }
 
-header{
+header {
     height: 300px;
     background-color: blue;
 }
 
-main{
+main {
     background-color: yellow;
     height: 500px;
 
 }
 
-main div{
+main div {
     background-color: purple;
     width: 200px;
     height: 200px;
@@ -38,12 +37,12 @@ main div{
     margin-top: -100px;
 }
 
-footer{
+footer {
     background-color: chocolate;
     height: 300px;
 }
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     background-color: greenyellow;
     border-radius: 50%;
@@ -54,62 +53,63 @@ footer{
     margin: 1em;
     text-align: center;
     align-content: center;
-    transition: background-color .1s cubic-bezier(1,.43,.9,.06);
-    transition: box-shadow .1s cubic-bezier(1,.43,.9,.06);
+    transition: background-color .1s cubic-bezier(1, .43, .9, .06);
+    transition: box-shadow .1s cubic-bezier(1, .43, .9, .06);
     box-shadow: 0 20px 40px -10px black;
     cursor: pointer;
-    
+
 }
 
-.whatsapp:hover{
+.whatsapp:hover {
     background-color: green;
     box-shadow: 0 20px 40px 10px black;
     /* transform: scale(1.1); */
     transform: skew(45deg);
 
+
 }
 
-img{
+img {
     animation: colores 2s infinite;
 }
 
-@keyframes subirBajar{
-    0%{
+@keyframes subirBajar {
+    0% {
         color: red;
         transform: scale(1);
     }
 
-    25%{
+    25% {
         color: coral;
         transform: scale(1.5);
 
     }
 
-    75%{
+    75% {
         color: chartreuse;
         transform: scale(2);
     }
 
-    100%{
+    100% {
         color: red;
         transform: scale(1);
     }
 }
 
-@keyframes colores{
-    0%{
+@keyframes colores {
+    0% {
         filter: none;
         transform: scale(1);
         transform: rotate(0deg);
     }
 
-    50%{
+    50% {
         filter: saturate(200%);
         transform: scale(1.1);
         transform: rotate(360deg);
     }
 
-    100%{
+    100% {
         filter: none;
         transform: scale(1);
         transform: rotate(0deg);
