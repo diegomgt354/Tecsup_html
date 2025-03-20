@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import './App.css'
+import { Card } from './components/Card'
 
 const App =()=> { 
   
   const [primero, setPrimero] = useState(0)
   const [segundo, setSegundo] = useState(0)
   const [respuesta, setRespuesta] = useState(0)
+
+  const [general, setGeneral] = useState(0)
+  
 
   const operacion= (opcion:string)=>{
 
@@ -37,6 +41,9 @@ const App =()=> {
       <button onClick={()=>operacion('multiplicacion')}>multiplicacion</button>
       <button onClick={()=>operacion('division')}>division</button>
     
+
+      <Card contG={general} contadorGeneral={setGeneral}/>
+      <Card contG={general} contadorGeneral={setGeneral}/>
     </>
   )
 }
