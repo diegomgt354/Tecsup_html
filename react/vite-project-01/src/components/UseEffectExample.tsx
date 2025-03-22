@@ -9,7 +9,7 @@ const UseEffectExample = () => {
 
     const [loading, setLoading] = useState(false)
 
-    const traerElementos = async()=>{
+    const traerElementos = async () => {
 
         setLoading(true)
 
@@ -24,35 +24,35 @@ const UseEffectExample = () => {
     }
 
 
-    useEffect(()=>{
+    useEffect(() => {
         traerElementos()
-    },[])
+    }, [])
 
-  return (
-    <>
+    return (
+        <>
 
-        {
-            loading ? <p>Cargando...</p>
-            :
-            <table>
-                <thead>
-                    <th>Img</th>
-                    <th>Title</th>
-                    <th>Description</th>
-                </thead>
-                <tbody>
-                {elementos.map((elemento)=>(
-                    <tr key={elemento.id}>
-                        <td><img src={elemento.thumbnail} alt="" /></td>
-                        <td>{elemento.title}</td>
-                        <td>{elemento.description}</td>
-                    </tr>
-                    ))}
-                </tbody>
-            </table>
-        }
-    </>
-  )
+            {
+                loading ? <p>Cargando...</p>
+                    :
+                    <table>
+                        <thead>
+                            <th>Img</th>
+                            <th>Title</th>
+                            <th>Description</th>
+                        </thead>
+                        <tbody>
+                            {elementos.map((elemento) => (
+                                <tr key={elemento.id}>
+                                    <td><img src={elemento.thumbnail} alt="" /></td>
+                                    <td>{elemento.title}</td>
+                                    <td>{elemento.description}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+            }
+        </>
+    )
 }
 
 export default UseEffectExample

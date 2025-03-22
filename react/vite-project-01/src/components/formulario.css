@@ -1,0 +1,31 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+input,
+button {
+    border-radius: 10px;
+    max-width: 400px;
+    font-size: 30px;
+}
+
+.formulario>div>p {
+    color: red;
+}
+
+.per {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    cursor: pointer;
+}
