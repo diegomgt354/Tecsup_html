@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import BaseLayout from "../layout/BaseLayout"
+import BaseLayout from "../layouts/BaseLayout"
 
 const BaseOutlets = () => { // layout para rutas
     return (

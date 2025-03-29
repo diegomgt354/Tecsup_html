@@ -1,4 +1,4 @@
-import { DummyProduct } from "../../declarations/DummyJson"
+import { DummyProductsByCategories } from "../../declarations/DummyJson"
 
 const API_URL = 'https://dummyjson.com'
 
@@ -28,7 +28,17 @@ const useDummyJson = {
       const response = await fetch(`${API_URL}/products/${id}`)
       const data = await response.json()
       return data
-  }
+    },
+    getCategorias:async()=>{
+      const response = await fetch(`${API_URL}/products/categories`)
+      const data = await response.json()
+      return data
+    },
+    getProductsByCategorias:async(category:string)=>{
+      const response = await fetch(`${API_URL}/products/category/${category}`)
+      const data = await response.json()
+      return data 
+    },
 }
 
 export default useDummyJson

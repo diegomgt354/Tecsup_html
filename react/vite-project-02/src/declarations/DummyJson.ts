@@ -43,5 +43,32 @@ type DummyProduct = {
     images: string[]
     thumbnail: string
   }
+
+type DummySession = {
+    accessToken:string
+    refreshToken:string
+    id:number
+    username:string
+    email:string
+    firstName:string
+    lastName:string
+    gender:string
+    image:string
+}
+
+type DummyCategories = {
+    slug:string
+    name:string
+    url:string
+}
+
+
+type DummyProductsByCategories = {
+    products: DummyProduct[]
+    total:number
+    skip:number
+    limit:number
+}
+
   
-  export type {DummyProduct}
+  export type {DummyProduct, DummySession, DummyCategories, DummyProductsByCategories}

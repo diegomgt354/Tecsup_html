@@ -1,20 +1,20 @@
 const Storage = {
     get(key: string) {
-        const val = window.localStorage.getItem(key);
+        const val = window.localStorage.getItem(key)
         if(!val) {
-            return null;
+            return null
         }
-        return JSON.parse(val);
+        return JSON.parse(val)
     },
     set(key : string, val: any) {
-        window.localStorage.setItem(key, JSON.stringify(val));
+        window.localStorage.setItem(key, JSON.stringify(val))
     },
     remove(key: string) {
-        window.localStorage.removeItem(key);
+        window.localStorage.removeItem(key)
     },
     clear() {
-        window.localStorage.clear();
+        window.localStorage.clear()
     }
 }
 
-export default Storage;
+export default Storage
